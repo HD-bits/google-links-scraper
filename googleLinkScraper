@@ -9,7 +9,7 @@ options.add_argument("--lang=fr-FR")
 driver = webdriver.Chrome(executable_path="D:/Desktop/selenium/chromedriver.exe",chrome_options=options)
 driver.get('https://www.google.com/')
 search_input = driver.find_element_by_name('q')
-x=search_input.send_keys('site:https://beckers.no/produkter')
+x=search_input.send_keys('URL')
 search_input.send_keys(Keys.RETURN)
 results = []
 next=True
